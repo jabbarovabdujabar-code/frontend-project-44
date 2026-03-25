@@ -8,7 +8,16 @@
 
 ## Demo
 
-Asciinema: https://asciinema.org/a/00000
+Asciinema: https://asciinema.org/a/oONKWmKvYHhuwDHH
+
+_Пример сценария (записано в asciinema):_
+
+- `npm install -g .`
+- `brain-even`
+- Ввод: `Sam`
+- Ввод: `yes` / `no` в зависимости от числа
+- 3 правильных ответа -> `Congratulations, Sam!`
+- Неправильный ответ -> `'... is wrong answer ;(. Correct answer was '...'.` и `Let's try again, Sam!`
 
 ## Usage
 
