@@ -21,7 +21,45 @@ brain-even
 brain-calc
 brain-gcd
 brain-progression
+brain-prime
+`
+
+## Brain Prime Game
+
+Asciinema: https://asciinema.org/a/SwVdXTuKLshdclcV
+
+**Демонстрация успешного прохождения:**
+
 ```
+$ brain-prime
+Welcome to the Brain Games!
+May I have your name? Sam
+Hello, Sam!
+Answer "yes" if given number is prime. Otherwise answer "no".
+Question: 7
+Your answer: yes
+Correct!
+Question: 4
+Your answer: no
+Correct!
+Question: 11
+Your answer: yes
+Correct!
+Congratulations, Sam!
+```
+
+**Демонстрация ошибки:**
+
+```
+Question: 7
+Your answer: no
+'no' is wrong answer ;(. Correct answer was 'yes'.
+Let's try again, Sam!
+```
+
+### Usage
+`brain-prime`
+
 
 ## Brain Even Game Demo
 
@@ -57,8 +95,7 @@ Asciinema: https://asciinema.org/a/brain-calc-demo.cast # replace with real
 
 ## Brain GCD Game
 
-**Asciinema Demo:**
-Upload brain-gcd-demo.cast to asciinema.org
+Asciinema: https://asciinema.org/a/brain-gcd-demo.cast # upload brain-gcd-demo.cast
 
 ### Usage
 `brain-gcd`
@@ -66,11 +103,19 @@ Upload brain-gcd-demo.cast to asciinema.org
 **Успех:**
 ```
 $ brain-gcd
-... 
+Welcome to the Brain Games!
+May I have your name? Sam
+Hello, Sam!
+Find the greatest common divisor of given numbers.
 Question: 25 50
 Your answer: 25
 Correct!
-...
+Question: 100 52
+Your answer: 4
+Correct!
+Question: 3 9
+Your answer: 3
+Correct!
 Congratulations, Sam!
 ```
 
@@ -84,9 +129,9 @@ Let's try again, Sam!
 
 ## Brain Progression Game
 
-**Asciinema Demo (success):** Upload brain-progression-demo.cast
+Asciinema:   https://asciinema.org/a/0WO0yPFxcLnxjF8N # upload brain-progression-demo.cast
 
-**Демонстрация успешного прохождения:**
+**Демонстрация успешного прохождения (запуск и игра):**
 
 ```
 $ brain-progression
