@@ -1,0 +1,13 @@
+{"version": 2, "width": 80, "height": 20, "timestamp": 1730000000, "env": {"SHELL": "/bin/bash"}}
+[0.0, "o", "$ "]
+[1.0, "o", "brain-progression"]
+[2.0, "o", "\nWelcome to the Brain Games!\nMay I have your name? "]
+[2.5, "i", "Sam"]
+[3.0, "o", "\nHello, Sam!\nWhat number is missing in the progression?\nQuestion: 5 7 9 11 13 .. 17 19 21 23\nYour answer: "]
+[3.5, "i", "15"]
+[4.0, "o", "\nCorrect!\nQuestion: 2 5 8 .. 14 17 20 23 26 29\nYour answer: "]
+[4.5, "i", "11"]
+[5.0, "o", "\nCorrect!\nQuestion: 14 19 24 29 34 39 44 49 54 ..\nYour answer: "]
+[5.5, "i", "59"]
+[6.0, "o", "\nCorrect!\nCongratulations, Sam!\n"]
+

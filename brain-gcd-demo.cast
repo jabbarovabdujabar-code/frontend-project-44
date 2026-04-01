@@ -1,0 +1,14 @@
+{"version": 2, "width": 80, "height": 20, "timestamp": 1730000000, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.0, "o", "user@host:~/project$ "]
+[1.0, "o", "brain-gcd"]
+[2.0, "o", "Welcome to the Brain Games!\nMay I have your name? "]
+[3.0, "i", "Sam"]
+[3.5, "o", "\nHello, Sam!\nFind the greatest common divisor of given numbers.\nQuestion: 25 50\nYour answer: "]
+[4.0, "i", "25"]
+[4.5, "o", "\nCorrect!\nQuestion: 100 52\nYour answer: "]
+[5.0, "i", "4"]
+[5.5, "o", "\nCorrect!\nQuestion: 3 9\nYour answer: "]
+[6.0, "i", "3"]
+[6.5, "o", "\nCorrect!\nCongratulations, Sam!\n"]
+[7.0, "o", "user@host:~/project$ "]
+
