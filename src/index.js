@@ -3,13 +3,12 @@ import readlineSync from 'readline-sync';
 const ROUNDS_COUNT = 3;
 
 export default function runGame(description, getQuestionAndAnswer) {
-  console.log('Welcome to the Brain Games!');
-
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(description);
 
   for (let i = 0; i < ROUNDS_COUNT; i += 1) {
+
     const { question, correctAnswer } = getQuestionAndAnswer();
 
     console.log(`Question: ${question}`);
