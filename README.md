@@ -1,19 +1,14 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/jabbarovabdujabar-code/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/jabbarovabdujabar-code/frontend-project-44/actions)
+# Игры разума
 
-## Demo
+Небольшой набор консольных игр на JavaScript. Каждая игра задаёт три вопроса, и задача игрока — дать три правильных ответа подряд.
 
-Asciinema: https://asciinema.org/a/oONKWmKvYHhuwDHH
-
-## Usage
-
-1. Установите пакет глобально (или через npm link):
+## Установка
 
 ```bash
 npm install -g .
 ```
 
-2. Запустите игры:
+## Запуск
 
 ```bash
 brain-games
@@ -22,144 +17,58 @@ brain-calc
 brain-gcd
 brain-progression
 brain-prime
-`
+```
 
-## Brain Prime Game
+## Описание игр
 
-Asciinema: https://asciinema.org/a/SwVdXTuKLshdclcV
+### brain-games
+Приветствие и запрос имени игрока.
 
-**Демонстрация успешного прохождения:**
+### brain-even
+Проверка, является ли число чётным. Отвечайте `yes` или `no`.
+
+### brain-calc
+Нужно вычислить результат арифметического выражения: сложение, вычитание или умножение.
+
+### brain-gcd
+Найдите наибольший общий делитель двух чисел.
+
+### brain-progression
+Восстановите пропущенное число в числовой прогрессии.
+
+### brain-prime
+Ответьте `yes`, если число простое, иначе `no`.
+
+## Пример игры
 
 ```
-$ brain-prime
+$ brain-even
 Welcome to the Brain Games!
 May I have your name? Sam
 Hello, Sam!
-Answer "yes" if given number is prime. Otherwise answer "no".
-Question: 7
+Answer "yes" if the number is even, otherwise answer "no".
+Question: 14
 Your answer: yes
 Correct!
-Question: 4
+Question: 7
 Your answer: no
 Correct!
-Question: 11
+Question: 30
 Your answer: yes
 Correct!
 Congratulations, Sam!
 ```
 
-**Демонстрация ошибки:**
+Если ответ неверный, игра сразу завершится и выведет правильный вариант.
 
-```
-Question: 7
-Your answer: no
-'no' is wrong answer ;(. Correct answer was 'yes'.
-Let's try again, Sam!
-```
+## Проверка
 
-### Usage
-`brain-prime`
-
-
-## Brain Even Game Demo
-
-_Пример сценария:_
-- `brain-even`
-- Ввод: `Sam`
-- Ввод: `yes` / `no`
-- 3 правильных -> `Congratulations, Sam!`
-- Неправильный -> `'yes' is wrong answer ;(. Correct answer was 'no'.` `Let's try again, Sam!`
-
-Пример (победа):
-- Question: 8 -> yes `Correct!`
-- ... -> Congratulations, Sam!
-
-Пример ошибки:
-- Question: 15 -> yes `'yes' is wrong answer ;(. Correct answer was 'no'.` `Let's try again, Sam!`
-
-## Brain Calc Game
-
-Asciinema: https://asciinema.org/a/brain-calc-demo.cast # replace with real
-
-### Usage
-`brain-calc`
-
-Пример (победа):
-- Question: 4 + 10 `14` `Correct!`
-- Question: 25 - 11 `14` `Correct!`
-- Question: 25 * 7 `175` `Correct!`
-- Congratulations, Sam!
-
-Пример ошибки:
-- Question: 25 * 7 `145` `'145' is wrong answer ;(. Correct answer was '175'.` `Let's try again, Sam!`
-
-## Brain GCD Game
-
-Asciinema: https://asciinema.org/a/brain-gcd-demo.cast # upload brain-gcd-demo.cast
-
-### Usage
-`brain-gcd`
-
-**Успех:**
-```
-$ brain-gcd
-Welcome to the Brain Games!
-May I have your name? Sam
-Hello, Sam!
-Find the greatest common divisor of given numbers.
-Question: 25 50
-Your answer: 25
-Correct!
-Question: 100 52
-Your answer: 4
-Correct!
-Question: 3 9
-Your answer: 3
-Correct!
-Congratulations, Sam!
+```bash
+npm test
 ```
 
-**Ошибка:**
-```
-Question: 25 50
-Your answer: 1
-'1' is wrong answer ;(. Correct answer was '25'.
-Let's try again, Sam!
-```
+## Примечания
 
-## Brain Progression Game
-
-Asciinema:   https://asciinema.org/a/0WO0yPFxcLnxjF8N # upload brain-progression-demo.cast
-
-**Демонстрация успешного прохождения (запуск и игра):**
-
-```
-$ brain-progression
-Welcome to the Brain Games!
-May I have your name? Sam
-Hello, Sam!
-What number is missing in the progression?
-Question: 5 7 9 11 13 .. 17 19 21 23
-Your answer: 15
-Correct!
-Question: 2 5 8 .. 14 17 20 23 26 29
-Your answer: 11
-Correct!
-Question: 14 19 24 29 34 39 44 49 54 ..
-Your answer: 59
-Correct!
-Congratulations, Sam!
-```
-
-**Демонстрация ошибки:**
-
-```
-Question: 5 7 9 11 13 .. 17 19 21 23
-Your answer: 1
-'1' is wrong answer ;(. Correct answer was '15'.
-Let's try again, Sam!
-```
-
-### Usage
-`brain-progression`
+- Игра работает через `readline-sync`, поэтому ввод осуществляется прямо в терминале.
+- Чтобы удалить глобальную установку, выполните `npm uninstall -g frontend-project-44` (или нужное имя пакета).
 
